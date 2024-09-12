@@ -1,0 +1,98 @@
+
+/* Do a veritical flip when the card is clicked */
+.flip .flip-card {
+    transform: rotateX(180deg);
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 40vw;
+    height: 45vh;
+    align-self: center;
+    margin-bottom: 3vh;
+    border: none;
+}
+
+/* used to position the front and back side */
+.card-inner {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* Do a veritical flip when the card is clicked */
+.flip .card-inner {
+    transform: rotateX(180deg);
+}
+
+/* Positio nthe front and back side */
+.card-front, .card-back {
+    position: absolute;
+    border-radius: 15px;
+
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*for Safari*/
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card-front {
+    justify-content: center;
+    /* padding: 0 3vw; */
+}
+
+.card-img {
+    height: 45vh;
+    max-width: 20vw;
+    object-fit: cover;
+
+    border-radius: 15px 0 0 15px;
+}
+
+/* Style the back side */
+.card-back {
+    transform: rotateX(180deg);
+}
+
+.card-text {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    text-wrap: wrap;
+    margin: 2vw;
+}
+
+/* card categories */
+.Science {
+    background-color: rgba(71, 134, 100, 0.85);
+}
+
+.Geography {
+    background-color: rgba(194, 186, 72, 0.85);
+}
+
+.Math {
+    background-color: rgba(240, 70, 48, 0.85);
+}
+
+.History{
+    background-color: rgba(240, 128, 48, 0.85);
+}
+
+.English{
+    background-color: rgba(48, 192, 240, 0.85);
+}
+
+.Art{
+    background-color: rgba(240, 109, 240, 0.85);
+}

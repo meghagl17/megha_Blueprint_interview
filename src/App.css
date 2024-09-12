@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/021/583/370/original/aesthetic-background-illustrations-of-clouds-stars-and-sky-with-purple-gradations-suitable-for-wallpapers-presentation-backgrounds-and-various-other-design-needs-free-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.header {
+  width: 60%;
+  text-align: center;
+  color:white;
+}
+
+.title {
+  font-size: 36px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  font-size: 24px;
+  text-shadow: 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+.main-body {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 6vw;
+  height: 5vh;
+}
+
+.control-btn {
+  background-color: transparent;
+  border: none;
+  width: 30%;
+  &:hover {
+    background-color: rgba(214, 220, 223, 0.2);
+  }
+}
+
+.card-guess {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#guess-input {
+  width: 65%;
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+#guess-submit {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(190, 150, 215);
+  color: black;
+  font-weight: 500;
+}
+
+.guess {
+  font-size: 1.25vw;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5vw;
+}
+
+.stats {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+h2 {
+  margin: 0.25em;
+}
